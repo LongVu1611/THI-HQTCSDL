@@ -32,6 +32,9 @@ add member NV2
 alter role db_datareader
 add member QL
 
+--Câu 1d: Chỉ có admin(sa) mới xem được bảng Person.Person vì là người có quản trị của database
+SELECT * from Person.Person
+
 --Câu 1e: Các nhân viên quản lý NV1, NV2, QL hoàn thành dự án, admin thu hồi quyền đã cấp. Xóa role NhanVien. (1đ).
 
 alter role Nhanvien
